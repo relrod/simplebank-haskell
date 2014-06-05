@@ -9,7 +9,7 @@ pushd "$f/simplebank-haskell.git"
   git checkout gh-pages
   git rm -rf docs
 popd
-mv dist/doc/html/simplebank/ "$f/simplebank-haskell.git/docs"
+mv dist/doc/html/simplebank/* "$f/simplebank-haskell.git/"
 pushd "$f/simplebank-haskell.git"
   git add -A
   git commit -m "Manual docs deploy."
